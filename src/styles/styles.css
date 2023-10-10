@@ -1,0 +1,62 @@
+/* bagian pencarian */
+header {
+  background-color: #1450a3;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+/* bagian utama */
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: stretch;
+  height: 25%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* bagian footer */
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #1450a3;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* tampilan di hp */
+@media screen and (max-width: 550px) {
+  main {
+    flex-direction: column;
+  }
+  movies-list {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 90%;
+  }
+}
+
+/* kembali ke atas */
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
